@@ -7,7 +7,7 @@ Directories:
 root
 	meanshift
 		output_23-Mar-2011_vertex_output_lr-0.75_23-Mar-2011_gausstd-20_photbl-200
-			index-1
+		NOTE: meanshift data sparse at the moment, found a bug and have to re run tests. Image 50% smaller than original simulated data image.
 	threshold
 		output_23-Mar-2011_vertex_output_lr-0.75_23-Mar-2011_gausstd-20_photbl-200
 	src
@@ -38,4 +38,9 @@ write_remove_noise_no_filter.m
 	input: data_dir file_name out_file_name [threshold]
 	output: void
 	Same as write_remove_noise but uses convolution.
+	
+write_mshift.m
+	input: data_dir file_name out_file_name [threshold]
+	output: void
+	Same as write_remove_noise but uses meanshift to cluster intensity values.
 	
