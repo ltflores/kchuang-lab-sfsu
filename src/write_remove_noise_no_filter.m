@@ -1,7 +1,5 @@
 function write_remove_noise(data_dir,file_name,out_file_name,varargin)
 
-%used to remove noise from full tiff file.
-
 full_file_name = strcat(data_dir,'\',file_name);
 dir_name = full_file_name(1:end-4);
 
@@ -25,12 +23,10 @@ for i = 1:num_images
     img(:,:,i) = double(imread(full_file_name, i));
 end
 
-filter = double([[1/9,1/9,1/9];[1/9,1/9,1/9];[1/9,1/9,1/9]]);
-
 for i = 1:num_images
-    img_conv = conv2(img(:,:,i),filter,'same');
-    img_conv = img_conv/max(max(img_conv));
-    %img_conv = img(:,:,i)/max(max(img(:,:,i)));
+    %img_conv = conv2(img(:,:,i),filter,'same');
+    %img_conv = img_conv/max(max(img_conv));
+    img_conv = img(:,:,i)/max(max(img(:,:,i)));
     
     %establish a threshold
     if (size(varargin,2)>0)
