@@ -15,7 +15,7 @@ for i=1:x*y
     for j=1:k
         m_val = m(img_out(i),img,h);
         stop_val = (sqrt(m_val))^2/h^2;
-        if (stop_val>th^2)
+        if (stop_val<th^2)
             img_out(i) = m_val+img_out(i);
         end
     end
