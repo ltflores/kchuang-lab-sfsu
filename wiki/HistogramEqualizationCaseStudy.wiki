@@ -5,11 +5,11 @@
 I wanted to examine the effects of equalizing the histogram for simulated data. Below animated gifs for both the original and transformed data as well as histogram and cdf graphs for the first frame.
 
 Images were processed as individual frames:
-* compute the CDF
-* map intensity values from input to output
-** x = intensity values from the original data
-** y = intensity values for output data
-** y = cdf(x)
+ * compute the CDF
+ * map intensity values from input to output
+  ** x = intensity values from the original data
+  ** y = intensity values for output data
+  ** y = cdf(x)
 
 = Data =
 
@@ -20,4 +20,3 @@ Images were processed as individual frames:
 || *CDF* || <img align="middle" src="http://www.floresproductions.com/huanglab/original_cdf.png" /> || <img src="http://www.floresproductions.com/huanglab/eq_cdf.png" /> ||
 
 = Analysis =
-
