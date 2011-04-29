@@ -13,6 +13,11 @@ Images were processed as individual frames:
 
 = Data =
 
+*Original Sample Parameters*
+ * 170x70 pixels
+ * Gaussian noise with std=20
+ * photobleaching = 200
+
 ||  || *Original Data* || *Histogram Equalized Data* ||
 || *Animated GIF* || <img align="middle" src="http://www.floresproductions.com/huanglab/output_23-Mar-2011_vertex_output_lr-0.75_23-Mar-2011_gausstd-20_photbl-200.gif" /> || <img align="middle" src="http://www.floresproductions.com/huanglab/output_23-Mar-2011_vertex_output_lr-0.75_23-Mar-2011_gausstd-20_photbl-200_hist-eq.gif" /> ||
 || *First Frame* || <img align="middle" src="http://www.floresproductions.com/huanglab/output_23-Mar-2011_vertex_output_lr-0.75_23-Mar-2011_gausstd-20_photbl-200.png" /> || <img align="middle" src="http://www.floresproductions.com/huanglab/output_23-Mar-2011_vertex_output_lr-0.75_23-Mar-2011_gausstd-20_photbl-200_hist-eq.png" /> ||
