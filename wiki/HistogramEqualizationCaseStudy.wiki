@@ -1,0 +1,23 @@
+#Details the results of equalizing the histogram for a sample simulated data
+
+= Introduction =
+
+I wanted to examine the effects of equalizing the histogram for simulated data. Below animated gifs for both the original and transformed data as well as histogram and cdf graphs for the first frame.
+
+Images were processed as individual frames:
+* compute the CDF
+* map intensity values from input to output
+** x = intensity values from the original data
+** y = intensity values for output data
+** y = cdf(x)
+
+= Data =
+
+||  || *Original Data* || *Histogram Equalized Data* ||
+|| *Animated GIF* || <img align="middle" src="http://www.floresproductions.com/huanglab/output_23-Mar-2011_vertex_output_lr-0.75_23-Mar-2011_gausstd-20_photbl-200.gif" /> || <img align="middle" src="http://www.floresproductions.com/huanglab/output_23-Mar-2011_vertex_output_lr-0.75_23-Mar-2011_gausstd-20_photbl-200_hist-eq.gif" /> ||
+|| *First Frame* || <img align="middle" src="http://www.floresproductions.com/huanglab/output_23-Mar-2011_vertex_output_lr-0.75_23-Mar-2011_gausstd-20_photbl-200.png" /> || <img align="middle" src="http://www.floresproductions.com/huanglab/output_23-Mar-2011_vertex_output_lr-0.75_23-Mar-2011_gausstd-20_photbl-200_hist-eq.png" /> ||
+|| *Histogram* || <img align="middle" src="http://www.floresproductions.com/huanglab/original_histogram.png" /> || <img align="middle" src="http://www.floresproductions.com/huanglab/eq_histogram.png" /> ||
+|| *CDF* || <img align="middle" src="http://www.floresproductions.com/huanglab/original_cdf.png" /> || <img src="http://www.floresproductions.com/huanglab/eq_cdf.png" /> ||
+
+= Analysis =
+
