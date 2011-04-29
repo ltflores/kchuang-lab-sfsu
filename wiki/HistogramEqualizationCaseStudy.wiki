@@ -14,7 +14,7 @@ Images were processed as individual frames:
 = Data =
 
 *Original Sample Parameters*
- * 170x70 pixels
+ * 155x70 pixels
  * Gaussian noise with std=20
  * photobleaching = 200
 
