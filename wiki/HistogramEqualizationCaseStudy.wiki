@@ -5,7 +5,7 @@
 I wanted to examine the effects of equalizing the histogram for simulated data. Below animated gifs for both the original and transformed data as well as histogram and cdf graphs for the first frame.
 
 Images were processed as individual frames:
- * compute the CDF
+ * compute the CDF for the original data
  * map intensity values from input to output
   ** x = intensity values from the original data
   ** y = intensity values for output data
@@ -20,3 +20,5 @@ Images were processed as individual frames:
 || *CDF* || <img align="middle" src="http://www.floresproductions.com/huanglab/original_cdf.png" /> || <img src="http://www.floresproductions.com/huanglab/eq_cdf.png" /> ||
 
 = Analysis =
+
+It seems we have a disproportional amount of dark gray level values, essentially the background which renders brute force histogram equalization useless in enhancing the contrast. Moving forward, I'll cut the cdf top and bottom 5%, as mentioned by Tristan. If we choose to pursue histogram equalization further I can also test it with smoothing, an initial threshold to drop the first histogram peak, or regional histogram equalization.
