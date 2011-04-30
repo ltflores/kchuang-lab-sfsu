@@ -34,4 +34,4 @@ Parameters:
 
 =Analysis=
 
-The motivation for using maximum intensity was to to see if it was more stable than the average (x,y) coordinates for each region. Unfortunately, it doesn't seem that simple. It seems the maximum intensity moves just as sporadically as the region means. There's a chance that in those areas there are high noise spikes.
+The motivation for using maximum intensity was to to see if it was more stable than the average (x,y) coordinates for each region. Unfortunately, it doesn't seem that simple. It seems the maximum intensity moves just as sporadically as the region means. There's a chance that in those areas there are high noise spikes but I'll need to examine local intensity peaks of successive frames to verify.
