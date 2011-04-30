@@ -22,7 +22,7 @@ Simulated data with the following values:
 Parameters:
  * STD = standard deviation
  * P = photobleaching
- * T = thresholding
+ * T = thresholding, set to 0.7 for the data shown since that seemed to be the best intensity for all cases. 0.8 contained more false negatives and I think we want to lean more toward false positives.
 
 || *STD* || *P* || *T* || *Binary* || *Spatial Mean* || *Max  Intensity* ||
 || 10 || 0 || 0.7 || <img src="http://www.floresproductions.com/huanglab/thresh-max_int-comparison/bin_output_08-Apr-2011_vertex_output_lr-0.75_23-Mar-2011_gausstd-10_photbl-0_t-0.7-4.gif" /> || <img src="http://www.floresproductions.com/huanglab/thresh-max_int-comparison/thresh_output_08-Apr-2011_vertex_output_lr-0.75_23-Mar-2011_gausstd-10_photbl-0_t-0.7-3.gif" /> || <img src="http://www.floresproductions.com/huanglab/thresh-max_int-comparison/max-int_output_08-Apr-2011_vertex_output_lr-0.75_23-Mar-2011_gausstd-10_photbl-0_t-0.7-1.gif" /> ||
