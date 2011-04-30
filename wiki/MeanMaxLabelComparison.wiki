@@ -4,7 +4,7 @@
 
 ==Basic Process==
 For each data run the following algorithm
- * binarize data with threshold values ranging between [ 0.1, 0.9 ]
+ * binarize data with threshold values ranging between 0.1 and 0.9 with incremental steps of 0.1
  * label connected regions
  * for each region find an intensity value to label with a green pixel using one of two methods
   ** mean (x,y) coordinates
