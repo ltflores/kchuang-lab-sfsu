@@ -1,0 +1,26 @@
+﻿/*! \mainpage
+ *
+ * \section files Primary files 
+ * <ul>
+ * 		<li>fit_track() 
+ *			\copybrief fit_track()</li>
+ *		<li>grad_tracks()
+ *			\copybrief grad_tracks()</li>
+ * </ul>
+ * 
+ * \section algo Algorithm
+ * The main algorithm can be found in fit_track():
+ * \copydetails fit_track()
+ * 
+ * \section obsv Observations
+ * A realistic \f$ \delta \f$ would be \f$ \frac{\lambda}{pixel\;callibration} \f$, but this causes points in neighboring pixels to quickly converge to the same 'track'.<br/>
+ * This problem can be seen especially when dealing with simulated data. So a smaller window will get the best isolated tracks, but appear somewhat less stable and may not be realistic.
+ */
+ 
+ /** \example fit_track
+ * To fit tracks to 'input_image.tif' using \f$ \delta=3 \f$ and write output to the directory 'data':<br/>
+ * >> grad_tracks('data/input_image.tif',3,'data/')<br/>
+ * <br/>
+ * To fit tracks without saving output:<br/>
+ * >> grad_tracks('data/input_image.tif',3,'data/')
+ */
