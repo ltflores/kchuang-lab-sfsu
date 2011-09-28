@@ -66,7 +66,6 @@ function grad_tracks(img_filename,delta,varargin)
     imagesc(img(:,:,Z));
     
     disp('Please click on initialization points and press return...');
-    [X,Y] = ginput;
 	% If you want to manually input coordinates, comment out the following
     % line:
     [X,Y] = ginput;
