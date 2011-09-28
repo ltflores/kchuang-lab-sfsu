@@ -1,0 +1,12 @@
+\form#0:$ 2 \delta x 2 \delta $
+\form#1:$ max\_pixel(\sqrt{(\nabla_{x}(sub-image))^{2} + (\nabla_{y}(sub-image))^{2}}) $
+\form#2:$ \delta $
+\form#3:$ \sigma*num_stds x \sigma*num_stds $
+\form#4:$ row \pm \sigma*num_stds $
+\form#5:$ col \pm \sigma*num_stds $
+\form#6:$ \frac{\lambda}{pixel callibration} $
+\form#7:$ \delta=3 $
+\form#8:$ \frac{\lambda}{pixel\;callibration} $
+\form#9:$ \sigma*num\_stds x \sigma*num\_stds $
+\form#10:$ row \pm \sigma*num\_stds $
+\form#11:$ col \pm \sigma*num\_stds $
