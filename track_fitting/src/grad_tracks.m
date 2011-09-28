@@ -16,6 +16,9 @@
 %>      <li>Show in 3D plot.</li>
 %> </ol>
 %>
+%> Instead of clicking coordinates, you can use a list. Check line 68
+%> of the source code for more info.
+%>
 %> @param img_filename filename for image (tif format) to use
 %> @param delta \f$ \delta \f$ (radius) for sub-image
 %> @param varargin option arguement, output directory to write rgb and
@@ -64,6 +67,12 @@ function grad_tracks(img_filename,delta,varargin)
     
     disp('Please click on initialization points and press return...');
     [X,Y] = ginput;
+	% If you want to manually input coordinates, comment out the following
+    % line:
+    [X,Y] = ginput;
+    % And fill out the following array:
+    %X = [60;72;80;93;64;73;80;88;19;145;145];
+    %Y = [30;30;30;29;42;42;42;41;34;32;38];
     close(h);
     nPoints = size(X,1);
     
